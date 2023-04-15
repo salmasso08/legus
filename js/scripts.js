@@ -61,4 +61,20 @@ $(function () {
         });
 
     });
+    
+    //Magnific Popup
+    $('.galeria-foto').magnificPopup({ 
+        type: 'image',
+        delegate: 'a',
+        
+        gallery:{enabled:true},
+        callbacks: {
+          
+          buildControls: function() {
+           
+            this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+          }
+          
+        }
+      });
 });
