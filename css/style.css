@@ -35,7 +35,7 @@
 
 /*Galeria*/
 .section-galeria {
-  background-color: var(--branco);
+  background-color: #f9f9f9;
 }
 .section-galeria .content {
   float: left;
@@ -413,6 +413,57 @@
   float: left;
   padding: 0.5em 0 0em 0;
 }
+.formulario {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.formulario label {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+.formulario label span {
+  font-size: 1em;
+  color: #17badf;
+  float: left;
+  margin-bottom: 5px;
+  font-family: "open_sansregular";
+}
+.formulario .campo {
+  font-size: 1.2em;
+  color: #7b7979;
+  font-family: "open_sansregular";
+  outline: none;
+  border: 1px #dee5ed solid;
+  border-radius: 3px;
+  padding: 0.6em;
+  transition: 0.5s;
+}
+.formulario .campo:focus {
+  box-shadow: 0 0 4px 0px rgb(255, 130, 0);
+  border: 1px rgb(255, 130, 0) solid;
+  color: #ff8200;
+}
+.formulario .btn-enviar {
+  width: 160px;
+  float: left;
+  margin-top: 5px;
+  background-color: #ffffff;
+  color: #7b7979;
+  border: 1px #dee5ed solid;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0.5em 0em;
+  font-size: 1.5em;
+  font-family: "open_sansregular";
+  transition: 0.2s;
+}
+.formulario .btn-enviar:hover {
+  background-color: var(--laranja);
+  color: #ffffff;
+  border: 1px var(--laranja) solid;
+}
 @media screen and (max-width: 768px) {
   .section-contato {
     height: auto;
@@ -453,6 +504,7 @@
 .container {
   float: left;
   width: 100%;
+  position: relative;
 }
 
 .main_footer_copy {
@@ -493,9 +545,21 @@
   margin-right: 3px;
   color: var(--preto);
 }
+.contact-top {
+  position: absolute;
+  top: 5%;
+  left: 47%;
+}
+
+.contact-top a {
+  text-decoration: none;
+  color: var(--laranja);
+  font-size: 18px;
+}
 
 /*480PX BREAKPOINT*/
 /*480 dividido por 16 = 30em*/
+
 @media (min-width: 30em) {
   .box-css {
     float: left;
@@ -511,6 +575,18 @@
   }
 }
 
+@media (max-width: 780px) {
+  .contact-top {
+    top: 2%;
+    left: 42%;
+  }
+}
+
+@media (max-width: 466px) {
+  .contact-top {
+    left: 38%;
+  }
+}
 /*600PX BREAKPOINT*/
 /*600 dividido por 16 = 37,5em*/
 @media (min-width: 37em) {
